@@ -1,0 +1,31 @@
+#Lists all remote repositories
+git remote
+
+#Lists all remote repositories in detail.
+git remote -v
+
+#Initialize remote repositories
+git remote add github https://github.com/nathancomputerinstitute/git_quick_reference.git
+
+cat .git/config
+
+#Remove remote repository
+git remote rm github
+
+#Push local repositories to remote repositories (New)
+git push -u github master #-u is for tracking branch
+
+cat .git/config
+cat .git/refs/remotes/github/master
+
+git push [github master] #(if it is tracking branch and Updates to be pushed)
+
+#Convert non_tracking branch to tracking branch
+git branch --set-upstream non_tracking github/non_tracking #(former branch is local branch)
+
+#Lists all remote branches
+git branch -r #See only remote branches
+git branch -a #See all (local and remote) branches
+
+#Clone existing repositories
+git clone https://github.com/nathancomputerinstitute/git_quick_reference.git new_repository_name (in current directory)
