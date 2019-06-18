@@ -27,3 +27,7 @@ git merge new_branch_01 #no new commits or new SHA_ID can be seen
 git merge --no-ff new_branch_01 #new commits and new SHA_ID will be created
 git merge --ff-only new_branch_01 #do the merge only if fast-forward is possible
 git merge --abort
+
+#Creates new branch out from remote branch
+git branch new_branch_02 github/new_branch_02
+git checkout -b new_branch_02 github/new_branch_02
