@@ -5,7 +5,7 @@ git remote
 git remote -v
 
 #Initialize remote repositories
-git remote add github git@github.com:siliconjungle/git_quick_reference.git
+git remote add github git@github.com:binaryjungle/git_quick_reference.git
 
 cat .git/config
 
@@ -32,8 +32,8 @@ git branch -r #See only remote branches
 git branch -a #See all (local and remote) branches
 
 #Clone existing repositories
-git clone git@github.com:siliconjungle/git_quick_reference.git new_repository_name (in current directory cloning default branch)
-git clone -b new_branch_01 git@github.com:siliconjungle/git_quick_reference.git new_repository_name (in current directory cloning specified branch)
+git clone git@github.com:binaryjungle/git_quick_reference.git new_repository_name (in current directory cloning default branch)
+git clone -b new_branch_01 git@github.com:binaryjungle/git_quick_reference.git new_repository_name (in current directory cloning specified branch)
 
 
 git fetch github
